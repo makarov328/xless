@@ -1,8 +1,6 @@
 #!/bin/bash
-read -p "Enter Slack Incoming Hook: " "slack_incoming_webhook"
-vercel secret add slack-incoming-webhook "$slack_incoming_webhook"
+vercel secret add slack-incoming-webhook "https://hooks.slack.com/services/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"
 
-read -p "Enter IMGBB API Key: " "imgbb_api_key"
-vercel secret add imgbb-api-key "$imgbb_api_key"
+vercel secret add imgbb-api-key "c09b6b43dedb1433d83b0581928b0dfd"
 
 vercel deploy
